@@ -1,0 +1,97 @@
+@import "./styles/fonts.css";
+@import "./styles/normalize.css";
+
+:root {
+  /*--root-color: #c9d1d9 ; */
+  --root-color: #e8e8e8;
+  --root-background: rgb(42,42,42);
+  --root-background-gradient: linear-gradient(180deg, rgba(42,42,42,1) 0%, rgba(32,32,32,1) 35%, rgba(28,28,28,1) 100%) fixed;
+  /* copied from markdown styles */
+  --color-border-muted: #21262d;
+  --color-accent-fg: #58a6ff;
+  --color-highlight: #00db50; /* green */
+  /*--color-highlight: #ffcc00; yellow */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  color: var(--root-color);
+  background: var(--root-background);
+  background: var(--root-background-gradient);
+  font-family: 'OpenSansRegular', "Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: smaller;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+html, body { margin: 0; padding: 0; height: 100%; }
+
+.wrapper { /* required to have sticky footer only when content smaller than height */
+  /* alternative method is to use flex box https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers */
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+}
+
+header {
+
+  h1 {
+    color: var(--color-highlight);
+    font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    /* transition opacity on document load */
+    opacity: 0;
+    transition: opacity 2s;
+  }
+}
+
+main {
+  /* transition opacity on document load */
+  opacity: 0;
+  transition: opacity 2s;
+  h3 {
+    font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 0;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 5em;
+}
+
+hr.custom {
+  border: 0;
+  outline: none;
+  height: 3px;
+  background: transparent url(./images/hr.gif) center center repeat-x;
+  margin: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.highlight {
+  color: #ffcc00;
+  color: var(--color-highlight);
+  /* stroke: #ffcc00; needs svg to be inline - try a component to write into dom and save having the whole thing inline */
+}
+
+.credits {
+  font-size: 12px;
+  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #9a9a9a;
+  margin-top: -10px;
+
+}
