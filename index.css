@@ -34,7 +34,9 @@ html, body { margin: 0; padding: 0; height: 100%; }
   /* alternative method is to use flex box https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers */
   min-height: 100%;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* grid-template-rows: auto 1fr auto; */
+  grid-template-rows: none;
+
   width: 100%;
 }
 
