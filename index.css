@@ -4,12 +4,12 @@
 :root {
   /*--root-color: #c9d1d9 ; */
   --root-color: #e8e8e8;
-  --root-background: rgb(42,42,42);
+  --root-background: #231f20;
   --root-background-gradient: linear-gradient(180deg, rgba(42,42,42,1) 0%, rgba(32,32,32,1) 35%, rgba(28,28,28,1) 100%) fixed;
   /* copied from markdown styles */
   --color-border-muted: #21262d;
   --color-accent-fg: #58a6ff;
-  --color-highlight: #00db50; /* green */
+  --color-highlight: #98c252; /* green */
   /*--color-highlight: #ffcc00; yellow */
 }
 
@@ -20,7 +20,7 @@
 html {
   color: var(--root-color);
   background: var(--root-background);
-  background: var(--root-background-gradient);
+  /* background: var(--root-background-gradient); */
   font-family: 'OpenSansRegular', "Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   font-size: smaller;
   -webkit-font-smoothing: antialiased;
