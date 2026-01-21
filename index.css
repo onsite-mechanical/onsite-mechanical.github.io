@@ -7,6 +7,7 @@
   --root-background: #231f20;
   --root-background-gradient: linear-gradient(180deg, rgba(42,42,42,1) 0%, rgba(32,32,32,1) 35%, rgba(28,28,28,1) 100%) fixed;
   /* copied from markdown styles */
+  --color-border-dark: #120e10;
   --color-border-muted: #21262d;
   --color-accent-fg: #58a6ff;
   --color-highlight: #98c252; /* green */
@@ -51,6 +52,12 @@ header {
     /* transition opacity on document load */
     opacity: 0;
     transition: opacity 2s;
+  }
+}
+
+#banner {
+  img {
+    color: var(--color-border-dark);
   }
 }
 
