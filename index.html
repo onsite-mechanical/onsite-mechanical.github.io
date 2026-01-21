@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <title>Onsite Mechanical and Engineering Ltd</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <meta charset="utf-8">                                                                                                                                              
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta charset="utf-8">
     <meta name="description" content="Service, repair, and maintenance of vehicles and machinery on site or on the farm.">
-    <meta name="robots" content="nofollow">                                                                                                                             
+    <meta name="robots" content="nofollow">
     <meta property="og:title" content="Onsite Mechanical and Engineering Ltd">
     <meta property="og:url" content="https://onsite-mechanical.co.nz/">
     <meta property="og:description" content="Service, repair, and maintenance of vehicles and machinery on site or on the farm.">
@@ -20,13 +20,13 @@
     <div class="wrapper">
 
       <header class="mh4-ns mh1">
-        <h1 class="pa2 pa0-ns center">
+        <h1 class="ph2 pa0-ns mt0 mb3 center">
           <img src="./images/logo-no-text.png" class="h-auto mw4 v-btm" alt="Onsite Mechanical Logo, a spanner on a green shield" />
           Onsite Mechanical and Engineering Ltd
         </h1>
       </header>
 
-      <main id="content" class="mh4-ns mh1">
+      <div id="banner" class="mh4-ns mh1">
 
         <hr class="custom">
         <div class="cf mb3"></div>
@@ -41,7 +41,12 @@
               class="highlight no-underline">onsitemechanical@outlook.co.nz</a></span>
         </div>
         <div class="cf mb3"></div>
-        <hr class="custom">
+
+        <img src="./images/banner.jpg" class="mt3 w-100 ba bw1"
+        alt="Onsite Mechanical vehicles out on the farm, the maintenance truck and a tractor." />
+      </div>
+
+      <main id="content" class="mh4-ns mh1">
 
         <div class="w-100 pa2 pa0-ns">
           <h2>Serving the Selwyn District</h2>
@@ -67,7 +72,14 @@
       </footer>
 
     </div>
-    <script type="module" src="./scripts/index.js"></script>
+    <script>
+      const app = () => {
+        console.log("Ready");
+        document.querySelector("main").classList.toggle("visible");
+        document.querySelector("h1").classList.toggle("visible");
+      }
+
+      document.addEventListener('DOMContentLoaded', app, false);
+    </script>
   </body>
 </html>
-
